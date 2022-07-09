@@ -8,7 +8,7 @@ RUN go mod download
 
 COPY ./cmd ./cmd
 
-RUN go build -o /binary/go-docker ./cmd/api/main.go
+RUN go build -o ./binary/go-docker ./cmd/api/main.go
 
 FROM alpine:3.16
 WORKDIR /app
